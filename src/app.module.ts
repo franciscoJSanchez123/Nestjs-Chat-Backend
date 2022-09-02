@@ -10,7 +10,7 @@ import { UsersModule } from './users/users.module';
 import { ChatModule } from './chat/chat.module';
 import { OrdersModule } from './orders/orders.module';
 import { RolesModule } from './roles/roles.module';
-import { PaymentsModule } from './payments/payments.module';
+/*import { PaymentsModule } from './payments/payments.module';*/
 
 @Module({
   imports: [ItemsModule, TypeOrmModule.forRoot({
@@ -22,7 +22,7 @@ import { PaymentsModule } from './payments/payments.module';
       autoLoadEntities: true,
       synchronize: true,
   }),
-   AuthModule, UsersModule, ChatModule, OrdersModule, RolesModule, PaymentsModule],
+   AuthModule, UsersModule, ChatModule, OrdersModule, RolesModule, /*PaymentsModule*/],
   controllers: [AppController],
   providers: [AppService],
 })
