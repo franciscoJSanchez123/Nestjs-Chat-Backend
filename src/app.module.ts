@@ -22,7 +22,7 @@ import { RolesModule } from './roles/roles.module';
       autoLoadEntities: true,
       synchronize: true,
   }),
-   AuthModule, UsersModule, ChatModule /*, OrdersModule, RolesModule,*/ /*PaymentsModule*/],
+   AuthModule, UsersModule, ChatModule /*, OrdersModule*/, RolesModule, /*PaymentsModule*/],
   controllers: [AppController],
   providers: [AppService],
 })
