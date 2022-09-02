@@ -7,7 +7,7 @@ import { ItemsModule } from './items/items.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
-import { ChatModule } from './chat/chat.module';
+//import { ChatModule } from './chat/chat.module';
 import { OrdersModule } from './orders/orders.module';
 import { RolesModule } from './roles/roles.module';
 /*import { PaymentsModule } from './payments/payments.module';*/
@@ -22,7 +22,7 @@ import { RolesModule } from './roles/roles.module';
       autoLoadEntities: true,
       synchronize: true,
   }),
-   AuthModule, UsersModule, ChatModule, OrdersModule, RolesModule, /*PaymentsModule*/],
+   AuthModule, UsersModule, /*ChatModule*/, OrdersModule, RolesModule, /*PaymentsModule*/],
   controllers: [AppController],
   providers: [AppService],
 })
