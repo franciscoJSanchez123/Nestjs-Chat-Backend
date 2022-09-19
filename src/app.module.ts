@@ -15,7 +15,7 @@ import { RolesModule } from './roles/roles.module';
 @Module({
   imports: [ TypeOrmModule.forRoot({
       type: 'mongodb',
-      url: 'mongodb+srv://Ferreservica2020:fjJrGaSA959190@cluster0.h0rkb.mongodb.net/Ferreservica?retryWrites=true&w=majority',
+      url: 'url',
       ssl: true,
       useUnifiedTopology: true,
       useNewUrlParser: true,
